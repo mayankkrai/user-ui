@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1>USERS</h1>
+    </div>
+</div>
+
+
+
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+    <div class="col-xs-12">
+        <div class="row">
+            <ul class="nav navbar-nav">
+                <li >Last Name</li>
+                <li >First name</li>
+                <li >Email Id</li>
+                <li >phone no</li>
+                <li >DOB</li>
+                
+            </ul>
+
+            
+        </div>
+    </div>
+    </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-xs-12">
+           <app-useritem *ngFor="let list of userlist;let i=index" [index]="i" [userList]="list"></app-useritem>
+        </div>
+    </div>
